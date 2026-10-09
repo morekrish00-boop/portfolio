@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krish More — Wedding, Fashion & Commercial Photographer, Mumbai</title>
+<meta name="description" content="Krish More is a wedding, fashion, and commercial photographer based in Mumbai, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F5F0; --ink:#171717; --grey:#6b6a66; --line:#d9d6cf;
+  --serif:"Cormorant Garamond","Iowan Old Style","Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+ul{list-style:none}
+.label{font-family:var(--sans);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--grey)}
+.wrap{padding-inline:var(--pad);max-width:1480px;margin-inline:auto}
+hr,.rule{border:0;border-top:1px solid var(--line)}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,5vw,80px);min-height:calc(100svh - 64px);padding-block:clamp(32px,6vw,80px) clamp(28px,4vw,56px);align-items:end}
+.hero-text{padding-bottom:clamp(0px,3vw,40px)}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,11vw,10.5rem);line-height:.88;letter-spacing:-.01em;margin:28px 0 34px}
+.hero h1 span{display:block}
+.hero h1 span+span{padding-left:.9em}
+.hero .cats{font-size:12px;letter-spacing:.3em}
+.tagline{font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,2vw,1.6rem);color:var(--grey);margin-top:22px;max-width:30ch;line-height:1.35}
+/* PORTRAIT: replace the .portrait div with <img src="your-portrait.jpg" alt="Portrait of Krish More"> */
+.portrait{aspect-ratio:4/5;border:1px dashed #b9b5ab;display:grid;place-items:center;text-align:center;color:var(--grey);background:#efece5;padding:20px}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-block:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:16px}
+.nav ul{display:flex;gap:clamp(16px,3vw,44px)}
+.nav a{font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:10px 0;border-bottom:1px solid transparent;transition:border-color .3s}
+.nav a:hover{border-color:var(--ink)}
+.sig{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--grey);white-space:nowrap}
+
+/* BODY GRID */
+.body{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,7vw,120px);padding-block:clamp(56px,9vw,128px)}
+aside section+section{margin-top:56px}
+h2.label{padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:24px;color:var(--ink)}
+.about p{font-family:var(--serif);font-size:1.3rem;line-height:1.55}
+.list li{padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.list li:last-child{border-bottom:0}
+
+/* EXPERIENCE */
+.job{display:grid;grid-template-columns:1fr auto;gap:4px 24px;padding:30px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:6px}
+.job h3{font-size:13px;letter-spacing:.2em;font-weight:500}
+.job .role{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--grey);line-height:1.3}
+.job .meta{grid-column:2;grid-row:1/3;text-align:right;font-size:12px;color:var(--grey);line-height:1.8}
+.job p{grid-column:1/-1;margin-top:12px;max-width:62ch;color:#3a3935}
+.recog{margin-top:clamp(48px,7vw,88px)}
+.recog blockquote{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,2rem);line-height:1.35;max-width:32ch}
+.recog p.note{margin-top:14px;font-size:12px;color:var(--grey)}
+.ph{background:#ebe7dd;padding:0 .25em}
+
+/* PROJECTS */
+.projects{padding-bottom:clamp(56px,9vw,128px)}
+.projects header{display:flex;justify-content:space-between;align-items:baseline;padding:28px 0 36px;border-top:1px solid var(--line)}
+.projects h2{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.5vw,3.6rem);line-height:1}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(32px,5vw,72px) clamp(16px,2.5vw,36px)}
+.card:nth-child(1){grid-column:1/8}
+.card:nth-child(2){grid-column:9/13;align-self:end}
+.card:nth-child(3){grid-column:2/6}
+.card:nth-child(4){grid-column:7/13;align-self:end}
+.card .frame{overflow:hidden;background:#e5e1d8}
+.card img{width:100%;object-fit:cover;transition:transform 1.2s ease}
+.card:hover img{transform:scale(1.025)}
+.card:nth-child(1) img{aspect-ratio:4/5}
+.card:nth-child(2) img{aspect-ratio:3/4}
+.card:nth-child(3) img{aspect-ratio:3/4}
+.card:nth-child(4) img{aspect-ratio:3/2}
+.card figcaption{display:flex;flex-direction:column;gap:4px;padding-top:14px}
+.card figcaption em{font-family:var(--serif);font-size:1.15rem;color:var(--grey);line-height:1.3}
+
+/* CONTACT */
+.contact{display:grid;grid-template-columns:4fr 8fr;gap:clamp(32px,7vw,120px);padding-block:clamp(48px,7vw,96px);border-top:1px solid var(--line)}
+.contact address{font-style:normal;font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.8rem);line-height:1.6}
+.contact a{border-bottom:1px solid var(--line);transition:border-color .3s;word-break:break-word}
+.contact a:hover{border-color:var(--ink)}
+
+/* CTA */
+.cta{display:block;position:relative;aspect-ratio:21/8;min-height:260px;overflow:hidden;color:#fff;background:#222}
+.cta img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cta::before{content:"";position:absolute;inset:0;background:rgba(10,10,10,.5);z-index:1;transition:background .5s}
+.cta:hover::before{background:rgba(10,10,10,.62)}
+.cta div{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;gap:14px}
+.cta h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,4.6vw,3.8rem);line-height:1.05}
+.cta span{font-size:11px;letter-spacing:.18em;word-break:break-all;opacity:.85}
+
+/* FOOTER */
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;padding-block:28px}
+footer{border-top:1px solid var(--line)}
+
+/* MOTION: one gentle reveal, disabled for reduced-motion users */
+.rv{opacity:0;transform:translateY(14px);transition:opacity 1s ease,transform 1s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .card img,.card:hover img{transition:none;transform:none}
+}
+
+/* TABLET */
+@media (max-width:980px){
+  .body,.contact{grid-template-columns:1fr}
+  .card:nth-child(n){grid-column:span 6;align-self:start}
+  .card:nth-child(1){grid-column:1/-1}
+  .card:nth-child(1) img{aspect-ratio:3/2}
+  .card:nth-child(4){grid-column:1/-1}
+}
+/* MOBILE: recomposed, not shrunk */
+@media (max-width:640px){
+  .hero{grid-template-columns:1fr;min-height:0;gap:36px;align-items:start}
+  .hero-text{order:1}
+  .portrait{order:2;aspect-ratio:4/5}
+  .hero h1{font-size:clamp(3.6rem,19vw,5.6rem);margin:20px 0 24px}
+  .hero h1 span+span{padding-left:.5em}
+  .hero .cats{letter-spacing:.2em;font-size:11px}
+  .nav .wrap{flex-direction:column;align-items:flex-start;gap:0;padding-block:8px}
+  .nav ul{width:100%;justify-content:space-between;gap:8px}
+  .nav a{letter-spacing:.14em;font-size:10.5px;padding:12px 0}
+  .sig{display:none}
+  html{scroll-padding-top:56px}
+  .card:nth-child(n){grid-column:1/-1}
+  .card:nth-child(n) img{aspect-ratio:4/5}
+  .card:nth-child(4) img{aspect-ratio:3/2}
+  .job{grid-template-columns:1fr}
+  .job .meta{grid-column:1;grid-row:auto;text-align:left;margin-top:6px}
+  .cta{aspect-ratio:4/3}
+  footer .wrap{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="wrap hero" id="top">
+  <div class="hero-text">
+    <p class="label">Photographer</p>
+    <h1><span>KRISH</span><span>MORE</span></h1>
+    <p class="label cats" style="color:var(--ink)">WEDDING / FASHION / COMMERCIAL</p>
+    <!-- EDITABLE: tagline -->
+    <p class="tagline">“Capturing real moments, crafted visuals, and stories that last.”</p>
+  </div>
+  <!-- PORTRAIT PLACEHOLDER: delete this div and use
+       
+  <div class="portrait" role="img" aria-label="Placeholder for a portrait of Krish More">
+    <span class="label">Portrait placeholder<br>Replace with your photograph</span>
+  </div>-->
+  <img src="1. Cover pic.jpg" alt="Portrait of Krish More" width="800" height="1000"> 
+
+</header>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" aria-label="Primary">
+  <div class="wrap">
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <span class="sig">Shot by Krish More</span>
+  </div>
+</nav>
+
+<main>
+<div class="wrap body">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside>
+    <section class="about rv" id="about">
+      <h2 class="label">About me</h2>
+      <!-- EDITABLE: about text -->
+      <p>I’m Krish More, a wedding, fashion, and commercial photographer based in Mumbai, India. My work explores authentic moments, visual storytelling, people, light, and composition. With experience across wedding photography, beauty and cosmetics shoots, fashion imagery, and commercial projects, I approach every assignment with an eye for atmosphere, detail, and emotion.</p>
+    </section>
+
+    <!-- EDITABLE: delete any <li> you don't want -->
+    <section class="rv">
+      <h2 class="label">Skills</h2>
+      <ul class="list">
+        <li>Wedding Photography</li>
+        <li>Commercial &amp; Brand Photography</li>
+        <li>Fashion &amp; Model Photography</li>
+        <li>Beauty &amp; Cosmetics Photography</li>
+        <li>Visual Storytelling</li>
+        <li>Photo Editing &amp; Colour Correction</li>
+        <li>On-Location Photography</li>
+      </ul>
+    </section>
+
+    <!-- EDITABLE: remove tools you don't use professionally -->
+    <section class="rv">
+      <h2 class="label">Software</h2>
+      <ul class="list">
+        <li>Adobe Lightroom</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Premiere Pro</li>
+        <li>DaVinci Resolve</li>
+        <li>Aftershoot</li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- ===== EXPERIENCE + RECOGNITION ===== -->
+  <div>
+    <section id="experience" class="rv">
+      <h2 class="label">Professional experience</h2>
+
+      <!-- ENTRY 1: edit company, role, location, dates, description -->
+      <article class="job">
+        <h3>DESTINATION PHOTOGRAPHERS</h3>
+        <p class="role">Wedding Photographer &amp; Photo Editor</p>
+        <div class="meta">Ahmedabad, Gujarat<br><span class="ph">Dec,2025 - Sept,2026</span></div>
+        <p>Photographed weddings and the rituals, people, and moments around them, then selected and edited the final images. Responsibilities included image selection, post-production, and same-day photo editing where applicable. <span class="ph"></span></p>
+      </article>
+
+      <!-- ENTRY 2 -->
+      <article class="job">
+        <h3>SCARLET COSMETICS</h3>
+        <p class="role">Lead Commercial Photographer</p>
+        <div class="meta"><span class="ph">Mumbai, Maharashtra</span><br><span class="ph">Jan,2025 - Nov,2025</span></div>
+        <p>Led the photography of models for cosmetics and beauty shoots, with attention to composition, lighting, and how each product and look was presented in commercial imagery. <span class="ph"></span></p>
+      </article>
+
+      <!-- ENTRY 3: add individual agency names here later -->
+      <article class="job">
+        <h3>MARKETING AGENCIES &amp; FREELANCE PROJECTS</h3>
+        <p class="role">Commercial &amp; Fashion Photographer</p>
+        <div class="meta"><span class="ph"></span><br><span class="ph"></span></div>
+        <p>Photography assignments for marketing agencies and independent clients, covering commercial content, fashion imagery, and model shoots. <span class="ph"></span></p>
+      </article>
+    </section>
+
+    <!-- EDITABLE: only fill in once the exact feature is verified -->
+    <section class="recog rv" aria-labelledby="rec-h">
+      <h2 class="label" id="rec-h">Selected features &amp; recognition</h2>
+      <blockquote>Featured by fashion designer Manish Malhotra.</blockquote>
+      <p class="note"><span class="ph"></span></p>
+    </section>
+  </div>
+</div>
+
+<!-- ===== FEATURED PROJECTS ===== -->
+<section class="wrap projects" id="portfolio">
+  <header>
+    <h2>Featured projects</h2>
+    <p class="label">Selected work</p>
+  </header>
+  <div class="grid">
+    <!-- IMAGE 1: replace the src with your own file, e.g. images/weddings.jpg -->
+    <figure class="card rv">
+      <div class="frame"><img src="20261009-photo-output.jpg" width="1000" height="1250" loading="lazy" alt="Placeholder image for wedding photography: candid moments and rituals"></div>
+      <figcaption><span class="label">01 — Weddings</span><em>Candid moments, rituals, people, emotion, and storytelling.</em></figcaption>
+    </figure>
+    <!-- IMAGE 2: replace the src, e.g. images/beauty.jpg -->
+    <figure class="card rv">
+      <div class="frame"><img src="beauty.jpg" width="1000" height="ƒ" loading="lazy" alt="Placeholder image for beauty and cosmetics photography"></div>
+      <figcaption><span class="label">02 — Beauty &amp; Cosmetics</span><em>Beauty portraits, models, product imagery, and commercial aesthetics.</em></figcaption>
+    </figure>
+    <!-- IMAGE 3: replace the src, e.g. images/fashion.jpg -->
+    <figure class="card rv">
+      <div class="frame"><img src="fashion.jpg" width="800" height="1066" loading="lazy" alt="Placeholder image for fashion and editorial photography"></div>
+      <figcaption><span class="label">03 — Fashion &amp; Editorial</span><em>Portraits, styling, movement, silhouettes, and expressive compositions.</em></figcaption>
+    </figure>
+    <!-- IMAGE 4: replace the src, e.g. images/commercial.jpg -->
+    <figure class="card rv">
+      <div class="frame"><img src="commercial.jpg" width="1200" height="800" loading="lazy" alt="Placeholder image for commercial and brand photography"></div>
+      <figcaption><span class="label">04 — Commercial</span><em>Brand campaigns, lifestyle imagery, and visual storytelling.</em></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="wrap contact rv" id="contact">
+  <h2 class="label">Contact</h2>
+  <address>
+    Krish More<br>
+    Mumbai, India<br>
+    <!-- EDITABLE: put your real email in both the href and the text -->
+    <a href="mailto:EMAIL@EXAMPLE.COM"><span class="ph">morekrish00@gmail.com</span></a><br>
+    <span class="ph">91+ 9321613539</span><br>
+    <!-- EDITABLE: put your Instagram link in the href and the text -->
+    </span></a><br>
+    Photography portfolio: <a href="https://krishmore.pixieset.com/theartofweddingstorytelling/" target="_blank" rel="noopener">krishmore.pixieset.com</a>
+  </address>
+</section>
+</main>
+
+<!-- ===== FINAL CALL TO ACTION ===== -->
+<!-- BANNER IMAGE: replace the src with a wide landscape photograph of your own -->
+<a class="cta" href="https://krishmore.pixieset.com/theartofweddingstorytelling/" target="_blank" rel="noopener" aria-label="View my full portfolio on Pixieset">
+  <img src="background.jpg" width="1800" height="700" loading="lazy" alt="Placeholder landscape image for the portfolio banner">
+  <div>
+    <h2>VIEW MY FULL PORTFOLIO →</h2>
+    <span>https://krishmore.pixieset.com/theartofweddingstorytelling/</span>
+  </div>
+</a>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap label">
+    <span>Krish More / Photographer</span>
+    <span>Wedding / Fashion / Commercial</span>
+  </div>
+</footer>
+
+<script>
+// Gentle reveal on scroll; skipped for visitors who prefer reduced motion.
+(function(){
+  var els=document.querySelectorAll('.rv');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
